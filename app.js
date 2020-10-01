@@ -1,3 +1,11 @@
+/* 
+Heroku Commands Notes:
+after git is setup....
+- heroku login
+- logs in with website
+- heroku create
+-git push heroku master (failed a few times, if this happens I reset in heroku web deploy tools)
+*/
 const express = require('express');
 const app = express();
 const port = 3000;
