@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ApiServer</title>
-  </head>
+  <%- include('./partials/head.ejs') %>
   <body>
     <nav>
       <div class="site-title">
@@ -20,11 +16,11 @@
     </nav>
     <div class="create-item content">
       <form action="">
-        <label for="title">Name:</label>
+        <label for="name">Name:</label>
         <input type="text" id="title" required />
-        <label for="snippet">Team </label>
+        <label for="team">Team </label>
         <input type="text" id="snippet" required />
-        <label for="body">Championships:</label>
+        <label for="titles">Championships:</label>
         <input type="text" id="body" required />
         <button>Submit</button>
       </form>

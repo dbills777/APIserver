@@ -15,21 +15,21 @@ const port = 3000;
 const members = ['Cersei', 'Tywin', 'Tyrion', 'Jamie'];
 const players = [
   {
-    "name": "Kobe",
-    "team": "Lakers",
-    "rings": 5
+    name: 'Kobe',
+    team: 'Lakers',
+    rings: 5,
   },
   {
-    "name": "Olajuwon",
-    "team": "Rockets",
-    "rings": 2
+    name: 'Olajuwon',
+    team: 'Rockets',
+    rings: 2,
   },
   {
-    "name": "Rodman",
-    "team": "Bulls",
-    "rings": 5
-  }
-]
+    name: 'Rodman',
+    team: 'Bulls',
+    rings: 5,
+  },
+];
 
 const names = members.map((member) => {
   return member;
@@ -43,7 +43,7 @@ app.get('/about', (req, res) => {
   res.render('about', { title: 'About Page', players }); //Send dynamic data to the selected ejs page
 });
 app.get('/player/create', (req, res) => {
-  res.render('create');
+  res.render('create', { title: 'Create' });
 });
 
 // use middleware to handle as last resort for 404 page
