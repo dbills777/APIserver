@@ -6,16 +6,15 @@ after git is setup....
 - heroku create
 -git push heroku master (failed a few times, if this happens I reset in heroku web deploy tools)
 */
-
 const express = require('express');
 const app = express();
 const port = 3000;
 app.use(express.urlencoded({ extended: true }));
 
-
-
 // Data for testing ejs
 const members = ['Cersei', 'Tywin', 'Tyrion', 'Jamie'];
+
+//****************START API SERVER ASSIGNMENT*********************/
 // Data for players display
 let players = require('./data');
 
@@ -76,6 +75,9 @@ app.delete('/api/players/:id', (req, res) => {
   });
   players.splice(index, 1);
 });
+//****************END API SERVER ASSIGNMENT*********************/
+
+//****************START SERVER ASSIGNMENT 3 TEMPLATING**********/
 app.use((req, res, next) => {
   console.log('new request made');
   console.log('host', req.hostname);
@@ -105,6 +107,8 @@ app.post('/postit', (req, res) => {
 app.use((req, res) => {
   res.status(404).render('404', { title: "4 oh' 4" });
 });
+//****************END SERVER ASSIGNMENT 3 TEMPLATING**********/
+
 // tell server to listen to requests
 app.listen(process.env.PORT || port, () =>
   console.log(`"API App LIstening at http://localhost:${port}`)
