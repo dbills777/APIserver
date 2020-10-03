@@ -2,21 +2,24 @@
 
 [API SERVER](https://frozen-coast-94100.herokuapp.com/api/players)
 
-- Minimum 4 HTTP Types of endpoints
+## Minimum 4 HTTP Types of endpoints
+<hr>
 - GET  
-   /api/players - (with PostMan) Returns the list from data.js
+   /api/players 
+   - Returns the list from data.js
+<hr>
 - POST
-
-  /api/players - (with PostMan) Send data as "Body", "Keys" name, team, rings, takes name team and rings, and creates a new player and pushes it to the array
-
-- UPDATE (PUT)
-
-  /api/players/:id ie: /api/players/1 - (with PostMan) requires /:ID Send data as "Body", "Keys" name, team, rings, and takes name team and rings, and updates the player with the :ID sent to change.
-
+  /api/players 
+  - Example: /api/players/1 (with PostMan) A POST Request sent with postman to this creates a new player and adds it to the list of players. Key values sent in the BODY. The Keys are: name, team and rings. Any Values can be sent for each of these items. and it will create a new player matching with the information sent.
+<hr>
+- PUT
+  /api/players/:id 
+  - Example: /api/players/1 (with PostMan) A PUT Request sent with postman to this Endpoint finds the player with the ID from the Parameter and updates its information with values sent in the BODY. The Keys are: name, team and rings. Any Values can be sent for each of these items. and it will update the player matching the ID that is sent.
+<hr>
 - DELETE
-
   /api/players/:id
    - Example: /api/players/3 (with PostMan) A delete Request sent with postman to this Endpoint finds the player with the given ID and splices it out of the array
+<hr>
 
 - Database NOT required
 - Data kept in memory (Static Object)
