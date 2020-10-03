@@ -4,6 +4,9 @@
 
 ## Minimum 4 HTTP Types of endpoints
 <hr>
+From postman any of the below methods can be used on the specified ENDPOINTS.
+refresh /api/players to see the changes that have been made in the mock database.
+<hr>
 - GET  
    /api/players 
    - Returns the list from data.js
@@ -27,3 +30,4 @@
 - End Points are documented in APIreadme file
   - works and tested with live site and postman endpoints.
 - End Points must return JSON Formatted Data
+  - Postman shows each item action returned in JSON for PUT POST DELETE. GET can be seen in the browser.
