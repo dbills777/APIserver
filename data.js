@@ -24,5 +24,11 @@ const players = [
     team: 'spurs',
     rings: 5,
   },
+  {
+    id: 6,
+    name: 'Barkley',
+    team: 'Suns',
+    rings: 0,
+  },
 ];
 module.exports = players;
