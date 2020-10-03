@@ -15,7 +15,8 @@
 
 - DELETE
 
-  /api/players/:id ie: /api/players/3 - (with PostMan) requires /:ID and splices the parameter :ID player out of the array.
+  /api/players/:id
+   - Example: /api/players/3 (with PostMan) A delete Request sent with postman to this Endpoint finds the player with the given ID and splices it out of the array
 
 - Database NOT required
 - Data kept in memory (Static Object)
