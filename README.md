@@ -9,7 +9,8 @@ refresh /api/players to see the changes that have been made in the mock database
 <hr>
 - GET  
    /api/players 
-   - Returns the list from data.js
+     - Returns the full player list from data.js. also /api/players/1 Returns the first player in the list.
+      
 <hr>
 - POST
   /api/players 
